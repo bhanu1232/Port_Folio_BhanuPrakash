@@ -67,13 +67,17 @@ const Header: React.FC = () => {
     <>
       <header className={`fixed top-0 left-16 md:left-20 right-0 z-40 transition-all duration-300 ${isScrolled ? 'bg-[#1E1E1E]/80 backdrop-blur-sm border-b border-gray-800' : 'bg-transparent'}`}>
         <div className="mx-auto flex justify-between items-center p-6 max-w-6xl">
-          <a href="#home" className="text-3xl font-bold tracking-widest text-white hover:text-purple-400 transition-colors duration-300">IPSUM</a>
-          
+          <a href="#home" className="text-3xl font-bold tracking-widest text-white hover:text-purple-400 transition-colors duration-300">BHANU</a>
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8 text-lg">
-            {navLinks.map(link => <NavLink key={link.id} {...link} />)}
+            {navLinks.map(link => (
+              <React.Fragment key={link.id}>
+                <NavLink id={link.id} title={link.title} />
+              </React.Fragment>
+            ))}
           </nav>
-          
+
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu" className="relative z-50">
@@ -88,7 +92,11 @@ const Header: React.FC = () => {
         className={`md:hidden fixed top-0 left-0 w-full h-full z-30 bg-[#1E1E1E] transition-transform duration-300 ease-in-out transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
         <nav className="flex flex-col items-center justify-center h-full space-y-10 text-3xl">
-          {navLinks.map(link => <NavLink key={link.id} {...link} />)}
+          {navLinks.map(link => (
+            <React.Fragment key={link.id}>
+              <NavLink id={link.id} title={link.title} />
+            </React.Fragment>
+          ))}
         </nav>
       </div>
     </>

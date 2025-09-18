@@ -1,17 +1,59 @@
 import React from 'react';
 import ProjectCard, { ProjectCardProps } from './ProjectCard';
+import p1 from "../Assets/p1.png";
+import p2 from "../Assets/p2.png";
+import p3 from "../Assets/p3.png";
+import p5 from "../Assets/p5.png";
+import p4 from "../Assets/p4.png";
+import p6 from "../Assets/p6.png";
 
 interface AllProjectsProps {
   onNavigateBack: () => void;
 }
 
 const allProjectData: Omit<ProjectCardProps, 'delay'>[] = [
-  { imgSrc: 'https://i.imgur.com/8L4n30f.png', title: 'Project X', tech: ['Webstudio', 'Ghost', 'Baserow'], description: 'Lorem ipsum dolor sit amet' },
-  { imgSrc: 'https://i.imgur.com/8L4n30f.png', title: 'Project Y', tech: ['React', 'TypeScript', 'Tailwind'], description: 'A personal portfolio website.' },
-  { imgSrc: 'https://i.imgur.com/8L4n30f.png', title: 'Project Z', tech: ['Vue', 'Firebase', 'SCSS'], description: 'A real-time chat application.' },
-  { imgSrc: 'https://i.imgur.com/8L4n30f.png', title: 'Project A', tech: ['Next.js', 'GraphQL', 'Prisma'], description: 'An e-commerce platform.' },
-  { imgSrc: 'https://i.imgur.com/8L4n30f.png', title: 'Project B', tech: ['SvelteKit', 'Supabase'], description: 'A social media dashboard.' },
-  { imgSrc: 'https://i.imgur.com/8L4n30f.png', title: 'Project C', tech: ['Angular', 'NgRx', 'Node.js'], description: 'A complex enterprise application.' },
+  {
+    imgSrc: p1,
+    title: 'DSA Practice AI',
+    tech: ['Next.js -', 'Gemini -', 'firebase'],
+    description: 'Ai powered dsa practice platform',
+    link: 'https://learn-with-ai-fvte.vercel.app/'
+  },
+  {
+    imgSrc: p2,
+    title: 'School Website',
+    tech: ['React -', 'TypeScript -', 'Tailwind'],
+    description: 'Freelanced A website for a school',
+    link: 'http://jcrseduvalleyschool.com/'
+  },
+  {
+    imgSrc: p3,
+    title: 'TechFest Portal',
+    tech: ['React -', 'Firebase -', 'Razorpay'],
+    description: 'National lever tech fest portal.',
+    link: 'https://cunosure2k25-zxl9.vercel.app/'
+  },
+  {
+    imgSrc: p5,
+    title: 'Gym Website',
+    tech: ['React -', 'Firebase -', 'Razorpay'],
+    description: 'Freelanced Gym Website.',
+    link: 'http://kalyanbattersetty.com/'
+  },
+  {
+    imgSrc: p4,
+    title: 'Rubics Cube Solver',
+    tech: ['Python -', 'Tkinter -', 'ALG.CUBING.NET'],
+    description: 'Rubiks cube solver using python .',
+    link: 'https://github.com/bhanu1232/Rubiks_solver'
+  },
+  {
+    imgSrc: p6,
+    title: 'Ecommerce Website',
+    tech: ['Next.Js -', 'Firebase -', 'Razorpay'],
+    description: 'Fully functinal Ecommerce website.',
+    link: 'https://shop-smart-and-chic.vercel.app/'
+  },
 ];
 
 

@@ -14,19 +14,22 @@ const Projects: React.FC<ProjectsProps> = ({ onNavigate }) => {
       imgSrc: p1,
       title: 'DSA Practice AI',
       tech: ['Next.js -', 'Gemini -', 'firebase'],
-      description: 'Ai powered dsa practice platform'
+      description: 'Ai powered dsa practice platform',
+      link: 'https://learn-with-ai-fvte.vercel.app/'
     },
     {
       imgSrc: p2,
       title: 'School Website',
       tech: ['React -', 'TypeScript -', 'Tailwind'],
-      description: 'Freelanced A website for a school'
+      description: 'Freelanced A website for a school',
+      link: 'http://jcrseduvalleyschool.com/'
     },
     {
       imgSrc: p3,
       title: 'TechFest Portal',
       tech: ['React -', 'Firebase -', 'Razorpay'],
-      description: 'National lever tech fest portal.'
+      description: 'National lever tech fest portal.',
+      link: 'https://cunosure2k25-zxl9.vercel.app/'
     }
   ];
 

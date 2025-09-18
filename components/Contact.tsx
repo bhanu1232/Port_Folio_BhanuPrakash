@@ -1,7 +1,7 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import SectionWrapper from './SectionWrapper';
-import { DiscordIcon, MailIcon, GithubIcon, FigmaIcon, LinkedinIcon } from './Icons';
+import { DiscordIcon, MailIcon, GithubIcon, LeetCodeIcon, LinkedinIcon } from './Icons';
 
 const Contact: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -37,20 +37,20 @@ const Contact: React.FC = () => {
           <p className="text-gray-400 text-lg max-w-md">
             I'm interested in freelance opportunities. However, if you have other request or question, don't hesitate to contact me.
           </p>
-          <form className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <form className="space-y-6" action="mailto:cbhanuprakash1212@gmai.com">
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <input type="text" id="name" placeholder="Name" className="w-full bg-transparent border border-gray-600 p-3 focus:border-purple-400 focus:outline-none text-base" />
               </div>
               <div>
                 <input type="email" id="email" placeholder="Email" className="w-full bg-transparent border border-gray-600 p-3 focus:border-purple-400 focus:outline-none text-base" />
               </div>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <textarea id="message" rows={3} placeholder="Message" className="w-full bg-transparent border border-gray-600 p-3 focus:border-purple-400 focus:outline-none text-base"></textarea>
-            </div>
-            <button type="submit" className="px-5 py-2 border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-[#1E1E1E] transition-colors text-base">
-              Submit
+            </div> */}
+            <button className="px-5 py-2 border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-[#1E1E1E] transition-colors text-base">
+              Contact
             </button>
           </form>
         </div>
@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
               <span>GitHub</span>
             </a>
             <a href="https://leetcode.com/u/cbhanuprakash1212/" className="flex items-center space-x-3 text-gray-400 hover:text-purple-400 transition-colors text-base">
-              <FigmaIcon className="h-6 w-6" />
+              <LeetCodeIcon className="h-6 w-6" />
               <span>LeetCode</span>
             </a>
             <a href="https://www.linkedin.com/in/bhanuprakashchowdam" className="flex items-center space-x-3 text-gray-400 hover:text-purple-400 transition-colors text-base">
@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </div>
-    </SectionWrapper>
+    </SectionWrapper >
   );
 };
 

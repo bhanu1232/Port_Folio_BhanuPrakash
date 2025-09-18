@@ -5,10 +5,11 @@ export interface ProjectCardProps {
   title: string;
   tech: string[];
   description: string;
+  link: string;
   delay?: number;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ imgSrc, title, tech, description, delay = 0 }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ imgSrc, title, tech, description, link, delay = 0 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -43,14 +44,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imgSrc, title, tech, descript
     >
       <img src={imgSrc} alt={title} className="w-full h-auto object-cover border border-gray-700 group-hover:border-purple-400 transition-colors" />
       <div className="py-3 text-base text-gray-400">
-          {tech.join(' ')}
+        {tech.join(' ')}
       </div>
       <div className="p-4 border border-gray-700 space-y-4 group-hover:border-purple-400 transition-colors">
-          <h3 className="text-3xl font-bold">{title}</h3>
-          <p className="text-gray-400 text-base">{description}</p>
-          <a href="#" className="inline-block px-5 py-2 border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-[#1E1E1E] transition-colors text-base">
-              View Project
-          </a>
+        <h3 className="text-3xl font-bold">{title}</h3>
+        <p className="text-gray-400 text-base">{description}</p>
+        <a href={link} target="_blank" rel="noopener noreferrer" className="inline-block px-5 py-2 border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-[#1E1E1E] transition-colors text-base">
+          View Project
+        </a>
       </div>
     </div>
   );

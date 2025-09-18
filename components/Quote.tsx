@@ -29,7 +29,7 @@ const Quote: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-32 text-center">
+    <section className="py-32 pt-2 text-center">
       <div
         ref={sectionRef}
         className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}

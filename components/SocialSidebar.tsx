@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { DiscordIcon, MailIcon, GithubIcon, FigmaIcon, LinkedinIcon } from './Icons';
+import { DiscordIcon, MailIcon, GithubIcon, LeetCodeIcon, LinkedinIcon } from './Icons';
 
 const SocialSidebar: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const SocialSidebar: React.FC = () => {
         <GithubIcon className="h-6 w-6" />
       </a>
       <a href="https://leetcode.com/u/cbhanuprakash1212/" aria-label="Figma" className="text-gray-400 hover:text-purple-400 transition-colors">
-        <FigmaIcon className="h-6 w-6" />
+        <LeetCodeIcon className="h-6 w-6" />
       </a>
       <a href="https://www.linkedin.com/in/bhanuprakashchowdam" aria-label="Linkedin" className="text-gray-400 hover:text-purple-400 transition-colors">
         <LinkedinIcon className="h-6 w-6" />

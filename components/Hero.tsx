@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
             <img src={hro} alt="Elias, the developer, in a dark hoodie and cap, looking down." className="w-full object-contain z-10" />
             <div className="absolute -bottom-4 -right-2 sm:-bottom-2 sm:-right-2 z-20 flex items-center space-x-2 bg-[#1E1E1E] px-3 py-2 border border-gray-700 text-sm sm:text-base">
               <span className="w-4 h-4 bg-purple-500"></span>
-              <span>Currently working on <span className="font-bold text-white">Portfolio</span></span>
+              <span>Currently working on <span className="font-bold text-white">Ai platform</span></span>
             </div>
           </div>
         </div>
