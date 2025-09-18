@@ -20,18 +20,16 @@ const AllProjects: React.FC<AllProjectsProps> = ({ onNavigateBack }) => {
     <div className="py-24 animate-fade-in">
       <div className="flex flex-wrap items-center justify-between gap-4 mb-12">
         <div className="flex items-center">
-            <h2 className="text-4xl font-bold text-white whitespace-nowrap">
-                <span className="text-purple-400">#</span>projects
-            </h2>
-            <div className="w-full ml-6 h-px bg-purple-400 max-w-md hidden sm:block"></div>
+
+          <div className="w-full ml-6 h-px bg-purple-400 max-w-md hidden sm:block"></div>
         </div>
         <button onClick={onNavigateBack} className="border border-gray-600 px-4 py-2 text-base hover:bg-gray-700 transition-colors">
-            ← Back to Home
+          ← Back to Home
         </button>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {allProjectData.map((project, index) => (
-          <ProjectCard key={index} {...project} delay={ (index % 3) * 150 } />
+          <ProjectCard key={index} {...project} delay={(index % 3) * 150} />
         ))}
       </div>
     </div>

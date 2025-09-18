@@ -55,29 +55,26 @@ const Contact: React.FC = () => {
           </form>
         </div>
         <div className={`flex justify-start lg:justify-center transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="border border-gray-600 p-6 space-y-5 h-fit">
-                <h3 className="text-2xl font-bold mb-4">My Whereabouts</h3>
-                <a href="#" className="flex items-center space-x-3 text-gray-400 hover:text-purple-400 transition-colors text-base">
-                    <DiscordIcon className="h-6 w-6" />
-                    <span>Discord</span>
-                </a>
-                <a href="#" className="flex items-center space-x-3 text-gray-400 hover:text-purple-400 transition-colors text-base">
-                    <MailIcon className="h-6 w-6" />
-                    <span>hi@example.com</span>
-                </a>
-                <a href="#" className="flex items-center space-x-3 text-gray-400 hover:text-purple-400 transition-colors text-base">
-                    <GithubIcon className="h-6 w-6" />
-                    <span>GitHub</span>
-                </a>
-                 <a href="#" className="flex items-center space-x-3 text-gray-400 hover:text-purple-400 transition-colors text-base">
-                    <FigmaIcon className="h-6 w-6" />
-                    <span>Figma</span>
-                </a>
-                <a href="#" className="flex items-center space-x-3 text-gray-400 hover:text-purple-400 transition-colors text-base">
-                    <LinkedinIcon className="h-6 w-6" />
-                    <span>LinkedIn</span>
-                </a>
-            </div>
+          <div className="border border-gray-600 p-6 space-y-5 h-fit">
+            <h3 className="text-2xl font-bold mb-4">My Whereabouts</h3>
+
+            <a href="mailto:cbhanuprakash1212@gmail.com" className="flex items-center space-x-3 text-gray-400 hover:text-purple-400 transition-colors text-base">
+              <MailIcon className="h-6 w-6" />
+              <span>cbhanuprakash1212@gmail.com</span>
+            </a>
+            <a href="https://www.github.com/bhanu1232" className="flex items-center space-x-3 text-gray-400 hover:text-purple-400 transition-colors text-base">
+              <GithubIcon className="h-6 w-6" />
+              <span>GitHub</span>
+            </a>
+            <a href="https://leetcode.com/u/cbhanuprakash1212/" className="flex items-center space-x-3 text-gray-400 hover:text-purple-400 transition-colors text-base">
+              <FigmaIcon className="h-6 w-6" />
+              <span>LeetCode</span>
+            </a>
+            <a href="https://www.linkedin.com/in/bhanuprakashchowdam" className="flex items-center space-x-3 text-gray-400 hover:text-purple-400 transition-colors text-base">
+              <LinkedinIcon className="h-6 w-6" />
+              <span>LinkedIn</span>
+            </a>
+          </div>
         </div>
       </div>
     </SectionWrapper>

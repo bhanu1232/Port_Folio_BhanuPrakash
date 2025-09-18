@@ -35,9 +35,9 @@ const Quote: React.FC = () => {
         className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
       >
         <blockquote className="relative max-w-4xl mx-auto p-4">
-          <p className="text-4xl tracking-wide font-semibold">With great power comes great electricity bill</p>
+          <p className="text-4xl tracking-wide font-semibold">Software is a great combination between artistry and engineering.</p>
           <footer className="mt-8 text-right">
-            <cite className="px-6 py-2 not-italic text-xl">– Dr. Who</cite>
+            <cite className="px-6 py-2 not-italic text-xl">– Bill Gates</cite>
           </footer>
         </blockquote>
       </div>
